@@ -15,16 +15,3 @@ class ZenPack(ZenPackBase):
     packZProperties = [
             ('zWmiProxy', '', 'string'),
             ]
-
-    def install(self, app):
-        if not hasattr(app.zport.dmd.Events.Status, 'Wbem'):
-            app.zport.dmd.Events.createOrganizer("/Status/Wbem")
-        ZenPackBase.install(self, app)
-
-    def upgrade(self, app):
-        if not hasattr(app.zport.dmd.Events.Status, 'Wbem'):
-            app.zport.dmd.Events.createOrganizer("/Status/Wbem")
-        ZenPackBase.upgrade(self, app)
-
-    def remove(self, app, leaveObjects=False):
-        ZenPackBase.remove(self, app, leaveObjects)

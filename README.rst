@@ -87,6 +87,7 @@ get single Instance for CPU0, WQL syntax example:
 get single Instance from specific namespace:
 
     ::
+
         root/cimv2:CIM_Processor.DeviceID="CPU0"
 
 

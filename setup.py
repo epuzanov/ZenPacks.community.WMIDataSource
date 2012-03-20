@@ -3,12 +3,12 @@
 # or saved.  Do not modify them directly here.
 # NB: PACKAGES is deprecated
 NAME = "ZenPacks.community.WMIDataSource"
-VERSION = "2.84"
+VERSION = "2.85"
 AUTHOR = "Egor Puzanov"
 LICENSE = ""
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
 PACKAGES = ['ZenPacks', 'ZenPacks.community', 'ZenPacks.community.WMIDataSource']
-INSTALL_REQUIRES = ['ZenPacks.community.SQLDataSource>=1.90']
+INSTALL_REQUIRES = ['ZenPacks.community.SQLDataSource>=1.99']
 COMPAT_ZENOSS_VERS = ">=2.5"
 PREV_ZENPACK_NAME = ""
 # STOP_REPLACEMENTS

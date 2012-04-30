@@ -2,6 +2,13 @@
 ZenPacks.community.WMIDataSource
 ================================
 
+DEPRECATION WARNING
+===================
+
+Use of WMI data source is deprecated. Please use
+`SQL <http://community.zenoss.org/docs/DOC-5913>`_ data source with **pywmidb**
+DB-API 2.0 interface instead.
+
 About
 =====
 

@@ -1,7 +1,7 @@
 ################################################################################
 #
 # This program is part of the WMIDataSource Zenpack for Zenoss.
-# Copyright (C) 2009-2012 Egor Puzanov.
+# Copyright (C) 2009-2013 Egor Puzanov.
 #
 # This program can be used under the GNU General Public License version 2
 # You can find full information here: http://www.zenoss.com/oss
@@ -12,12 +12,12 @@ __doc__="""WMIPlugin
 
 wrapper for PythonPlugin
 
-$Id: WMIPlugin.py,v 2.1 2012/03/20 20:19:32 egor Exp $"""
+$Id: WMIPlugin.py,v 2.2 2013/02/27 23:44:01 egor Exp $"""
 
-__version__ = "$Revision: 2.1 $"[11:-2]
+__version__ = "$Revision: 2.2 $"[11:-2]
 
 from ZenPacks.community.SQLDataSource.SQLPlugin import SQLPlugin
-CSTMPL = "'pywmidb',cp_min=1,cp_max=1,user='%s',password='%s',host='%s',namespace='%s'"
+CSTMPL = "'pywmidb',user='%s',password='%s',host='%s',namespace='%s'"
 
 class WMIPlugin(SQLPlugin):
     """

@@ -1,7 +1,7 @@
 ################################################################################
 #
 # This program is part of the WMIDataSource Zenpack for Zenoss.
-# Copyright (C) 2009-2012 Egor Puzanov.
+# Copyright (C) 2009-2013 Egor Puzanov.
 #
 # This program can be used under the GNU General Public License version 2
 # You can find full information here: http://www.zenoss.com/oss
@@ -13,9 +13,9 @@ __doc__="""WMIDataSource
 Defines attributes for how a datasource will be graphed
 and builds the nessesary DEF and CDEF statements for it.
 
-$Id: WMIDataSource.py,v 2.5 2012/03/20 20:20:37 egor Exp $"""
+$Id: WMIDataSource.py,v 2.6 2013/02/27 23:44:48 egor Exp $"""
 
-__version__ = "$Revision: 2.5 $"[11:-2]
+__version__ = "$Revision: 2.6 $"[11:-2]
 
 from Products.ZenModel.RRDDataSource import RRDDataSource
 from ZenPacks.community.SQLDataSource.datasources import SQLDataSource
@@ -23,7 +23,7 @@ from AccessControl import ClassSecurityInfo, Permissions
 
 import re
 PATHPAT = re.compile("^(?:([^\. ]+):)?([^\.\: ]+)(?:\.(.+))?", re.I)
-CSTMPL = "'pywmidb',cp_min=1,cp_max=1,user='%s',password='%s',host='%s',namespace='%s'"
+CSTMPL = "'pywmidb',user='%s',password='%s',host='%s',namespace='%s'"
 
 class WMIDataSource(SQLDataSource.SQLDataSource):
 
